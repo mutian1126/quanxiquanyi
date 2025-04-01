@@ -1,0 +1,189 @@
+/* 课程界面样式 */
+:root {
+    --primary-color: #1E88E5;
+    --secondary-color: #4285f4;
+    --accent-color-1: #FF9800;
+    --accent-color-2: #4CAF50;
+    --danger-color: #ef4444;
+    --text-color: #333;
+    --light-bg: #F5F7FA;
+    --white: #ffffff;
+    --gray-light: #f8f9fa;
+    --gray: #e9ecef;
+    --gray-dark: #6c757d;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-hover: 0 4px 20px rgba(0,0,0,0.2);
+    --border-radius: 10px;
+    --header-height: 80px;
+    --transition: all 0.3s ease;
+}
+
+.search-box {
+    position: relative;
+    width: 950px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+}
+
+.content-area {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: space-between; /* 在左右两侧分布 */
+    align-items: flex-start; /* 垂直对齐 */
+}
+
+.course-function-bar {
+    flex: 1; /* 使课程功能栏占据剩余空间 */
+    margin-left: 20px; /* 设置左侧间距 */
+    margin-top: 50px;
+}
+
+.course-list-container {
+    max-height: 300px; /* 设置最大高度 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    border: 1px solid var(--gray); /* 可选：为列表添加边框 */
+    border-radius: 5px; /* 可选：圆角 */
+    margin-bottom: 20px; /* 可选：与下方内容的间距 */
+}
+
+.course-list {
+    list-style-type: none; /* 去掉列表样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
+}
+
+.course-item {
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px; /* 列表项内边距 */
+    border-bottom: 1px solid var(--gray); /* 列表项底部边框 */
+    background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(255, 255, 255, 0)); /* 淡蓝色渐变背景 */
+    border-radius: 5px; /* 圆角 */
+    margin: 5px 0; /* 列表项上下间距 */ 
+}
+
+.course-icon {
+    width: 30px; /* 正方形宽度 */
+    height: 30px; /* 正方形高度 */
+    background-color: blue; /* 正方形颜色 */
+    margin-right: 10px; /* 正方形与课程名之间的间距 */
+}
+
+.course-details {
+    display: flex;
+    flex-direction: column; /* 垂直排列课程名和信息 */
+}
+
+.course-name {
+    font-weight: bold; /* 课程名加粗 */
+}
+
+.course-info {
+    font-size: 12px; /* 课程信息字体大小 */
+    color: var(--gray-dark); /* 课程信息颜色 */
+}
+
+.course-list li:last-child {
+    border-bottom: none; /* 最后一个列表项去掉底部边框 */
+}
+
+.rounded-rectangles {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: space-between; /* 在左右两侧分布 */
+    margin-top: 20px; /* 与课程列表的间距 */
+}
+
+.rectangle-one, .rectangle-two {
+    width: 138px;
+    height: 235px;
+    border-radius: 30.2px;
+    display: flex;
+    flex-direction: column; /* 让子元素垂直排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; /* 防止溢出 */
+    padding: 15px 0; /* 增加内边距，避免元素贴边 */
+}
+
+.rectangle-one {
+    background-color: rgba(173, 216, 230, 0.3);
+    color: rgb(119,126,245);
+}
+
+.rectangle-two {
+    background-color: rgb(247, 240, 255);
+    color: rgb(144,79,255);
+    margin-left: 30px;
+}
+
+/* 限制图片大小，避免填充整个矩形 */
+.rectangle-image {
+    width: 30px; /* 设置图片宽度 */
+    height: auto; /* 保持原始宽高比 */
+    margin-bottom: 10px; /* 图片和文字之间的间距 */
+}
+
+.video-container {
+    width: 580px; /* 设置宽度 */
+    height: 300px; /* 设置高度 */
+    top: 70px; /* 距离顶部的距离 */
+    margin-left: 33.5px; /* 距离左侧的距离 */
+    border-radius: 48px; /* 设置圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    position: relative; /* 使绝对定位的子元素相对于此元素定位 */
+}
+
+.course-info {
+    font-size: 12px; /* 课程信息字体大小 */
+    color: var(--gray-dark); /* 课程信息颜色 */
+}
+
+.teacher-info {
+    margin-top: 10px; /* 与视频之间的间距 */
+    color: #333; /* 字体颜色 */
+}
+
+#course-video {
+    width: 580px; /* 视频宽度 */
+    height: 300px; /* 高度自适应 */
+    object-fit: cover; /* 保持视频比例，裁剪多余部分 */
+    border-radius: 10px; /* 圆角 */
+}
+
+.course-details-box {
+    margin-top: 20px; /* 与视频之间的间距 */
+    text-align: center; /* 内容居中 */
+}
+
+.course-title {
+    font-size: 24px; /* 标题字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: #333; /* 字体颜色 */
+}
+
+.course-description {
+    font-size: 16px; /* 描述字体大小 */
+    color: #666; /* 字体颜色 */
+    margin-top: 10px; /* 与标题之间的间距 */
+}
+
+.knowledge-points {
+    margin-top: 20px; /* 与上方内容的间距 */
+    text-align: left; /* 左对齐 */
+}
+
+.knowledge-image {
+    width: 100%; /* 图片宽度100% */
+    max-width: 400px; /* 设置最大宽度 */
+    height: auto; /* 高度自适应 */
+    border-radius: 10px; /* 圆角 */
+    margin-top: 10px; /* 与标题之间的间距 */
+}
+

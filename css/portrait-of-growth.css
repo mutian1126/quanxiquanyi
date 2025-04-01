@@ -1,0 +1,183 @@
+/* 成长画像样式 */
+
+.growth-image-container {
+    left: 240px; /* 左边距 */
+    top:10px;
+    width: 500px; /* 矩形宽度 */
+    height: 360px; /* 矩形高度 */
+    background-color: rgb(66, 93, 165); /* 背景色 */
+    border-radius: 5px; /* 圆角效果 */
+    padding: 20px; /* 内边距 */
+    color: black; /* 默认字体颜色 */
+    position: relative; /* 使内容定位相对 */
+}
+
+.growth-image-header {
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.user-avatar {
+    width: 50px; /* 头像宽度 */
+    height: 50px; /* 头像高度 */
+    border-radius: 50%; /* 圆形头像 */
+    margin-right: 10px; /* 右边距 */
+}
+
+.growth-text h3 {
+    margin: 0; /* 去掉默认上边距 */
+    color: black; /* 标题字体颜色 */
+}
+
+.time-text {
+    margin: 0; /* 去掉默认上边距 */
+    color: white; /* 时间字体颜色 */
+}
+
+.expression-analysis-text {
+    color: black; /* 描述文本颜色 */
+    text-align: left; /* 文本左对齐 */
+    margin: 0 auto; /* 上下边距为0，左右居中 */
+    width: 90%; /* 设置宽度以便于居中 */
+}
+
+.growth-image {
+    width: 100%; /* 图片区域宽度 */
+    height: 200px; /* 图片区域高度 */
+    margin-top: 10px; /* 上边距 */
+    overflow: hidden; /* 超出内容隐藏 */
+}
+
+.analysis-image {
+    width: 100%; /* 图片宽度填满容器 */
+    height: 100%; /* 图片高度填满容器 */
+    object-fit: cover; /* 保持比例并覆盖容器 */
+}
+
+.knowledge-rate-container {
+    position: relative; /* 使内容定位相对 */
+    margin-left: 270px; /* 与成长画像区域的间距 */
+    margin-top: 10px; /* 可选：根据需要调整上边距 */
+}
+
+.knowledge-rate-shape {
+    position: relative; /* 使内容定位相对 */
+}
+
+.knowledge-rate-top {
+    width: 350px; /* 上部分宽度 */
+    height: 165px; /* 上部分高度 */
+    background-color: rgb(118, 138, 232); /* 背景色 */
+    border-radius: 15px 15px 0 0; /* 圆角处理 */
+    margin-bottom: -20px; /* 上下紧靠排列，负边距 */
+}
+
+.knowledge-rate-bottom {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 450px; /* 下部分宽度 */
+    height: 210px; /* 下部分高度 */
+    background-color: rgb(118, 138, 232); /* 背景色 */
+    border-radius: 0 0 15px 15px; /* 下部分圆角处理 */
+    border-top-left-radius: 0; /* 去掉左上角圆角 */
+    border-top-right-radius: 15px; /* 右上角圆角 */
+}
+
+.knowledge-rate-title {
+    color: white; /* 字体颜色为白色 */
+    text-align: center; /* 文本居中 */
+    margin: 0; /* 去掉默认边距 */
+    padding-top: 35px; /* 根据需要调整顶部内边距以居中 */
+}
+
+.knowledge-rate-image {
+    width: 400px; /* 设置图片宽度 */
+    height: 166px; /* 设置图片高度 */
+}
+
+.growth-plan-container {
+    left:240px;
+    top:410px;  
+    width: 900px;
+    height: 250px;
+    background-color: rgb(214, 228, 238);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.growth-plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.growth-plan-options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.growth-option {
+    background-color: white;
+    border: 2px solid rgb(100, 150, 200);
+    color: rgb(100, 150, 200);
+    padding: 5px 20px;
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top:-45px;
+}
+
+.growth-option.active {
+    background-color: rgb(100, 150, 200);
+    color: white;
+}
+
+.growth-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.growth-item {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.growth-item:hover {
+    transform: scale(1.05);
+}
+
+.growth-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.growth-item-content {
+    padding: 10px;
+}
+
+.growth-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.growth-item-desc {
+    font-size: 14px;
+    color: gray;
+}

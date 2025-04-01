@@ -1,0 +1,194 @@
+/* 菜单栏样式 */
+:root {
+    --primary-color: #1E88E5;
+    --secondary-color: #4285f4;
+    --accent-color-1: #FF9800;
+    --accent-color-2: #4CAF50;
+    --danger-color: #ef4444;
+    --text-color: #333;
+    --light-bg: #F5F7FA;
+    --white: #ffffff;
+    --gray-light: #f8f9fa;
+    --gray: #e9ecef;
+    --gray-dark: #6c757d;
+    --green: #00ff00;
+    --shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --shadow-hover: 0 4px 20px rgba(0,0,0,0.2);
+    --border-radius: 10px;
+    --header-height: 80px;
+    --transition: all 0.3s ease;
+}
+
+.sidebar {
+    width: 220px; /* 菜单栏宽度 */
+    height: 100vh; /* 菜单栏高度 */
+    position: fixed; /* 固定定位 */
+    top: 0; /* 顶部对齐 */
+    left: 0; /* 左侧对齐 */
+    background: linear-gradient(to bottom, #ADD8E6, #1E90FF); /* 背景渐变 */
+    box-shadow: var(--shadow); /* 阴影效果 */
+    padding: 20px; /* 内边距 */
+}
+
+.function-section {
+    margin-top: 20px; /* 与上方内容的间距 */
+}
+
+.function-section h2 {
+    font-size: 16px; /* 调小标题字体大小 */
+    color: var(--text-color); /* 标题颜色 */
+    margin-bottom: 5px; /* 调小标题与菜单之间的间距 */
+}
+
+.function-section .sidebar-menu li a {
+    padding: 8px 10px; /* 调小内边距 */
+    font-size: 14px; /* 调小菜单项字体大小 */
+}
+
+.friend-section {
+    margin-top: 65px; /* 好友板块距离通用板块顶端 30px */
+    margin-bottom: 20px; /* 可选：设置好友板块与其他内容之间的间距 */
+}
+
+.friend-section h2 {
+    font-size: 18px; /* 标题字体大小 */
+    color: var(--text-color); /* 标题颜色 */
+    margin-bottom: 10px; /* 标题与菜单之间的间距 */
+}
+
+.friend-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.friend-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.friend-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.friend-details {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+}
+
+.friend-name {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.friend-status-online {
+    font-size: 10px;
+    color: var(--green); 
+}
+
+.friend-status-offline {
+    font-size: 10px; /* 状态字体大小 */
+    color: var(--gray-dark); 
+}
+
+.sidebar .general-section {
+    margin-bottom: 30px;
+}
+
+.general-section h2 {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.general-section .sidebar-menu li a {
+    padding: 8px 10px;
+    font-size: 14px;
+    color: var(--text-color); /* 默认字体颜色 */
+}
+
+.general-section .sidebar-menu li a.exit {
+    color: red;
+}
+
+.general-section .sidebar-menu li a.set-up {
+    color: black;
+}
+
+.sidebar-menu {
+    list-style: none; /* 去掉列表样式 */
+    padding: 0; /* 去掉内边距 */
+}
+
+.sidebar-menu li a {
+    display: block; /* 块级元素 */
+    padding: 12px 15px; /* 内边距 */
+    color: var(--text-color); /* 字体颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+}
+
+.sidebar-menu li a:hover {
+    background-color: rgba(30, 136, 229, 0.1); /* 悬停时背景颜色 */
+}
+
+.sidebar-menu li a.active {
+    color: #6A5ACD; /* 活动链接颜色 */
+}
+
+.user-info {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.user-avatar {
+    width: 50px; /* 头像宽度 */
+    height: 50px; /* 头像高度 */
+    border-radius: 50%; /* 圆形头像 */
+    overflow: hidden; /* 隐藏超出部分 */
+    margin-right: 10px; /* 头像与文本之间的间距 */
+}
+
+.user-avatar img {
+    width: 100%; /* 使图片适应容器 */
+    height: auto; /* 保持图片比例 */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+}
+
+.course {
+    position: relative; /* 使箭头相对定位 */
+}
+
+.active {
+    color: purple; /* 点击后变为紫色 */
+}
+
+.arrow {
+    margin-left: 5px; /* 箭头与文字之间的间距 */
+    transform: rotate(90deg); /* 初始状态向右 */
+}
+
+.course.active .arrow {
+    transform: rotate(270deg); /* 点击后变为向下 */
+}
+
+.sub-menu {
+    display: none; /* 默认隐藏子菜单 */
+    list-style: none; /* 去掉列表样式 */
+    padding-left: 20px; /* 子菜单缩进 */
+}
+
+.sub-menu li a {
+    padding: 8px 10px; /* 子菜单项内边距 */
+    font-size: 14px; /* 子菜单项字体大小 */
+    color: var(--text-color); /* 子菜单项字体颜色 */
+}
+

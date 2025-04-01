@@ -1,0 +1,141 @@
+/* 社区样式 */
+/* 标题样式 */
+.community-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 搜索栏外部容器 */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 搜索框 */
+.search-input {
+    width: 800px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+/* 灰色分割线 */
+.separator {
+    width: 1px;
+    height: 25px;
+    background-color: #ccc;
+}
+
+/* 添加提问按钮 */
+.add-question {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.add-question:hover {
+    background-color: #333;
+}
+
+.tag-container {
+    margin-top: 10px; /* 标签容器的上边距 */
+}
+
+.tag {
+    display: inline-block;
+    color: #333; /* 标签文本颜色 */
+    padding: 5px 10px; /* 标签内边距 */
+    border-radius: 20px; /* 标签圆边效果 */
+    margin-right: 5px; /* 标签之间的间距 */
+    cursor: pointer; /* 鼠标悬停时显示为手型 */
+    border: 1px solid #ccc; /* 添加边框效果 */
+    background-color: #f9f9f9; /* 标签背景色 */
+}
+
+/* 为展开的矩形区域添加样式 */
+.more-tags-container {
+    margin-top: 10px; /* 矩形区域的上边距 */
+    padding: 10px; /* 矩形区域的内边距 */
+    border: 1px solid #ccc; /* 矩形区域的边框 */
+    border-radius: 5px; /* 矩形区域的圆边效果 */
+    background-color: #f9f9f9; /* 矩形区域的背景色 */
+    position: relative; /* 设置定位 */
+    z-index: 10; /* 提高显示优先级 */
+    display: none;
+}
+
+.posts-container {
+    position: absolute; /* 设置为绝对定位 */
+    top: 160px; /* 根据需要调整顶部位置 */
+    left: 240px; /* 根据需要调整左侧位置 */
+    width: 950px;
+    max-height: 500px; /* 设置最大高度以控制可视区域 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    border: hidden;
+    border-radius: 5px; /* 圆边效果 */
+    background-color: #f9f9f9; /* 背景色 */
+    padding: 10px; /* 内边距 */
+}
+
+.post {
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    padding: 10px; /* 帖子内边距 */
+    height: 100px;
+    border-bottom: 1px solid #ddd; /* 帖子之间的分隔线 */
+    text-decoration: none; /* 去掉链接下划线 */
+    color: inherit; /* 继承父元素的字体颜色 */
+}
+
+.post:hover {
+    background-color: #f0f0f0; /* 鼠标悬停时的背景色 */
+}
+
+.post:last-child {
+    border-bottom: none; /* 最后一个帖子不显示分隔线 */
+}
+
+.post-image {
+    width: 80px; /* 图片宽度 */
+    height: 80px; /* 图片高度 */
+    float: left; /* 左浮动 */
+    margin-right: 10px; /* 右边距 */
+    background-color: #e0e0e0; /* 图片占位背景色 */
+    border-radius: 50%; /* 设置为圆形 */
+    overflow: hidden; /* 确保内容不溢出 */
+}
+
+.post-image img {
+    width: 100%; /* 使图片宽度填满父容器 */
+    height: auto; /* 保持图片比例 */
+    border-radius: 50%; /* 设置为圆形 */
+    display: block; /* 使图片为块级元素，避免底部间距 */
+}
+
+.post-content {
+    flex-grow: 1; /* 使内容区域占据剩余空间 */
+}
+
+.post-content h3 {
+    margin: 0; /* 去掉标题的默认边距 */
+    font-size: 18px; /* 标题字体大小 */
+}
+
+.post-content p {
+    margin: 25px 0 0; /* 设置介绍的上边距为20px，其他边距为0 */
+    font-size: 14px; /* 介绍字体大小 */
+}
+
+.post-time {
+    margin-left: 10px; /* 左边距 */
+    font-size: 12px; /* 字体大小 */
+    color: #888; /* 字体颜色 */
+}

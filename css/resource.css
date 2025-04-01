@@ -1,0 +1,135 @@
+/* 资源样式 */
+.search-box {
+    position: relative;
+    width: 950px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+}
+
+.more-courses-title {
+    text-align: left; /* 靠左显示 */
+    margin-top: 20px; /* 上方间距 */
+    font-size: 24px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+}
+
+  /* 分类选择栏 */
+  .category-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* 分类容器 */
+.category-container {
+    display: flex;
+    overflow: hidden;
+    width: 440px; /* 最多显示 5 个分类 */
+}
+
+/* 分类按钮 */
+.category-button {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    width: 100px;
+    margin: 5px;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.category-button:hover, .category-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* 左右翻页按钮 */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 5px;
+}
+
+.scroll-btn.right {
+    right: 5px;
+}
+
+/* 课程展示区 */
+.more-courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* 默认分类隐藏，选中后才显示 */
+.course-category {
+    display: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.course-category.active {
+    display: flex;
+}
+
+/* 课程卡片 */
+.course-example {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 227.5px; /* 最大宽度为227.5px */
+    height: 160px; /* 设置固定高度为150px */
+    overflow: hidden; /* 超出内容隐藏 */
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: center; /* 将内容对齐到中部 */
+    align-items: center; /* 水平居中对齐 */
+    color: rgb(0,0,0); /* 设置文本颜色为黑色 */
+    text-decoration: none; /* 去掉链接下划线 */
+}
+
+.course-example:hover {
+    background-color: #f0f0f0; /* 鼠标悬停时的背景色 */
+}
+
+.course-image {
+    width: 200px; /* 设置图片宽度为200px */
+    height: 100px; /* 设置图片高度为100px */
+    margin: 0 auto; /* 居中图片 */
+    object-fit: cover; /* 保持图片比例 */
+}
+
+/* "所有课程" 特殊容器 */
+#all-courses {
+    display: none; /* 默认隐藏 */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

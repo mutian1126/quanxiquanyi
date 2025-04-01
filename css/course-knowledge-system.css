@@ -1,0 +1,245 @@
+/* 课程-知识体系式样 */
+.search-box {
+    position: relative;
+    width: 950px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 20px;
+}
+
+
+/* 课程板块整体样式 */
+.course-section {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.course-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.course-subtitle {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 课程容器 */
+.course-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 课程内容区域 */
+.course-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* 每个课程卡片 */
+.course-card {
+    flex: 0 0 200px; /* 固定宽度 */
+    height: 250px; /* 设置固定高度 */
+    margin: 10px;
+    background: rgb(230, 236, 255);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(230, 236, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 课程图片 */
+.course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.course-card-text{
+    margin-top: 10px;
+}
+
+/* 跳转按钮 */
+.course-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* 翻页按钮 */
+.prev-course, .next-course {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(244,173,66);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prev-course { left: 0; }
+.next-course { right: 0; }
+
+.prev-course:hover, .next-course:hover {
+    background-color: #0056b3;
+}
+
+/* 思维导图板块整体样式 */
+.mindmap-section {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* 思维导图标题容器 */
+.mindmap-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* 思维导图标题 */
+.mindmap-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* 思维导图副标题 */
+.mindmap-subtitle {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 思维导图容器 */
+.mindmap-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 思维导图内容区域 */
+.mindmap-content {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+/* 思维导图图片容器 */
+.mindmap-image-container {
+    text-align: center; /* 使内容居中 */
+    margin: 20px; /* 设置间距 */
+}
+
+/* 思维导图图片 */
+.mindmap-image {
+    width: 300px; /* 设置固定宽度 */
+    height: auto; /* 高度自适应 */
+}
+
+/* 思维导图信息 */
+.mindmap-info {
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px; /* 设置与图片的间距 */
+}
+
+/* 思维导图翻页按钮 */
+.prev-mindmap, .next-mindmap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(73, 114, 223);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.prev-mindmap { left: 0; }
+.next-mindmap { right: 0; }
+
+.prev-mindmap:hover, .next-mindmap:hover {
+    background-color: #0056b3;
+}
+
+.create-mindmap-button {
+    background-color: rgb(93, 134, 243); /* 蓝色背景 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.create-mindmap-button:hover {
+    background-color: rgb(73, 114, 223); /* 鼠标悬停时的颜色 */
+}
+
+/* 模态框样式 */
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1000; /* 确保在最上层 */
+    left: 0;
+    top: 0;
+    width: 100%; /* 全屏 */
+    height: 100%; /* 全屏 */
+    overflow: auto; /* 如果需要，添加滚动条 */
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明背景 */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* 设置宽度 */
+    max-width: 700px; /* 最大宽度 */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
