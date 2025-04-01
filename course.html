@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/course.css">
+    <title>学习平台课程</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html" >首页</a></li>
+                    <li>
+                        <a href="course.html"   class="active course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html" data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索相关课程">
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="video-container">
+                    <div class="course-info">
+                        <h2 id="course-title">当前课程：大学物理</h2>
+                    </div>
+                    <video id="course-video" controls >
+                        <source src="picture/course/vedio1.mp4" type="video/mp4">
+                        您的浏览器不支持视频标签。
+                    </video>
+                    <div class="teacher-info">
+                        <p><strong>老师：</strong>张老师</p>
+                        <p><strong>介绍：</strong>本课程将深入探讨大学物理的基本概念和应用。</p>
+                    </div>
+                    <div class="knowledge-points">
+                        <h3>知识点</h3>
+                        <img src="picture/course/knowledge-point-image.jpg" alt="知识点图片" class="knowledge-image">
+                    </div>
+                </div>
+                <div class="course-function-bar">
+                    <h3>已有课程</h3>
+                    <div class="course-list-container">
+                        <ul class="course-list">
+                            <li class="course-item" data-video="video1.mp4">
+                                <div class="course-icon"></div>
+                                <div class="course-details">
+                                    <div class="course-name">大学物理</div>
+                                    <div class="course-info">课程信息</div>
+                                </div>
+                            </li>
+                            <li class="course-item" data-video="video2.mp4">
+                                <div class="course-icon"></div>
+                                <div class="course-details">
+                                    <div class="course-name">电路基础</div>
+                                    <div class="course-info">课程信息</div>
+                                </div>
+                            </li>
+                            <li class="course-item" data-video="video3.mp4">
+                                <div class="course-icon"></div>
+                                <div class="course-details">
+                                    <div class="course-name">MATLAB</div>
+                                    <div class="course-info">课程信息</div>
+                                </div>
+                            </li>
+                            <li class="course-item" data-video="video4.mp4">
+                                <div class="course-icon"></div>
+                                <div class="course-details">
+                                    <div class="course-name">离散数学</div>
+                                    <div class="course-info">课程信息</div>
+                                </div>
+                            </li>
+                            <li class="course-item" data-video="video5.mp4">
+                                <div class="course-icon"></div>
+                                <div class="course-details">
+                                    <div class="course-name">概率论</div>
+                                    <div class="course-info">课程信息</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-rectangles">
+                        <a href="course-exam.html" class="rectangle-one">
+                            <img src="picture/course/exam-pic.jpg" alt="测试/试卷" class="rectangle-image">
+                            测试/试卷
+                        </a>
+                        <a href="course-homework.html" class="rectangle-two">
+                            <img src="picture/course/homework-pic.jpg" alt="作业" class="rectangle-image">
+                            作业
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 没有服务器，暂不可用fetch命令 -->
+    <!-- <script>
+        // 加载菜单栏
+        fetch('/resource/menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data; // 将菜单栏内容插入到容器中
+            })
+            .catch(error => {
+                console.error('加载菜单栏时出错:', error);
+            });
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const courseItems = document.querySelectorAll('.course-item');
+            const videoPlayer = document.getElementById('course-video');
+            const videoSource = videoPlayer.querySelector('source');
+
+            courseItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const videoFile = this.getAttribute('data-video');
+                    videoSource.src = videoFile; // 更新视频源
+                    videoPlayer.load(); // 重新加载视频
+                    videoPlayer.play(); // 播放视频
+                });
+            });
+        });
+    </script>
+</body>
+</html>

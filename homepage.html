@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <title>学习平台主页</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <div id="menu-container">
+            缺少服务器，暂不可用
+        </div>  -->
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html" class="active" >首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html"  data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索...">
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="blue-rectangle">
+                    <div class="text-area-1">
+                        <p class="text-area-1-content">数字人助手</p>
+                    </div>
+                    <div class="text-area-2">
+                        <p class="text-area-2-content">让教学更容易</p>
+                    </div>
+                    <button class="jump-button" onclick="location.href='course-ai-assistant.html'">立即使用</button>
+                    <img src="picture/homepage/star.jpg" class="star1" alt="四角星">
+                    <img src="picture/homepage/star.jpg" class="star2" alt="四角星">
+                    <img src="picture/homepage/star.jpg" class="star3" alt="四角星">
+                    <img src="picture/homepage/star.jpg" class="star4" alt="四角星">
+                    <img src="picture/homepage/star.jpg" class="star5" alt="四角星">
+                </div>
+                <div class="stats-area">
+                    <div class="stat-card">
+                        <h3>总进度</h3>
+                        <p>50%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>已学课程</h3>
+                        <p>6/12</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>学习时长</h3>
+                        <p>100h</p>
+                    </div>
+                </div>
+
+                <div class="courses-preview">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="ri-book-open-line"></i>
+                            进行中的课程
+                        </h2>
+                    </div>
+
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="picture/homepage/pic1.jpg" alt="人工智能导论">
+                                <span class="course-badge">进行中</span>
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">人工智能导论</h3>
+                                <div class="course-info">
+                                    <span><i class="ri-user-line"></i> 王教授</span>
+                                    <span><i class="ri-time-line"></i> 16周</span>
+                                </div>
+                                <div class="course-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 60%"></div>
+                                    </div>
+                                    <div class="progress-text">
+                                        <span>学习进度</span>
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="picture/homepage/pic2.jpg" alt="机器学习基础">
+                                <span class="course-badge">进行中</span>
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">机器学习基础</h3>
+                                <div class="course-info">
+                                    <span><i class="ri-user-line"></i> 李教授</span>
+                                    <span><i class="ri-time-line"></i> 12周</span>
+                                </div>
+                                <div class="course-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 35%"></div>
+                                    </div>
+                                    <div class="progress-text">
+                                        <span>学习进度</span>
+                                        <span>35%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="picture/homepage/pic3.jpg" alt="Python编程基础">
+                                <span class="course-badge">未开始</span>
+                            </div>
+                            <div class="course-content">
+                                <h3 class="course-title">Python编程基础</h3>
+                                <div class="course-info">
+                                    <span><i class="ri-user-line"></i> 张教授</span>
+                                    <span><i class="ri-time-line"></i> 10周</span>
+                                </div>
+                                <div class="course-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 0%"></div>
+                                    </div>
+                                    <div class="progress-text">
+                                        <span>学习进度</span>
+                                        <span>0%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h2>答疑区域</h2>
+                    <p>在这里可以提问和回答问题。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 没有服务器，暂不可用fetch命令 -->
+    <!-- <script>
+        // 加载菜单栏
+        fetch('/resource/menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data; // 将菜单栏内容插入到容器中
+            })
+            .catch(error => {
+                console.error('加载菜单栏时出错:', error);
+            });
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+</body>
+</html>

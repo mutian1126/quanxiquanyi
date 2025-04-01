@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/portrait-of-growth.css">
+    <title>学习平台成长画像</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <div id="menu-container">
+            缺少服务器，暂不可用
+        </div>  -->
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html"  data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html"  class="active">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="growth-image-container">
+            <div class="growth-image-header">
+                <img src="picture/portrait-of-growth/profile 1.jpg" alt="用户头像" class="user-avatar">
+                <div class="growth-text">
+                    <h3>面部表情分析</h3>
+                    <p class="time-text">2025年3月10日</p>
+                </div>
+            </div>
+            <p class="expression-analysis-text">
+                我们对您在观看"高等数学"课程时的面部表情进行了监控，发现您在观看"泰勒公式"知识点的视频时，出现了7次表示困惑、不解、惊讶的面部表情。
+            </p>
+            <div class="growth-image">
+                <img src="picture/portrait-of-growth/expression-analysis.jpg" alt="面部表情分析图" class="analysis-image">
+            </div>
+        </div>
+        <div class="knowledge-rate-container">
+            <div class="knowledge-rate-top">
+                <h2 class="knowledge-rate-title">相关知识点正答率</h2>
+            </div>
+            <div class="knowledge-rate-bottom">
+                <img src="picture/portrait-of-growth/knowledge-rate.jpg" alt="相关知识点图片" class="knowledge-rate-image">
+            </div>
+        </div>
+        <div class="growth-plan-container">
+            <h2 class="growth-plan-title">推荐成长方案</h2>
+            <div class="growth-plan-options">
+                <button class="growth-option active" data-type="courses">课程</button>
+                <button class="growth-option" data-type="exams">试卷</button>
+            </div>
+            <div class="growth-content" id="growthContent">
+                <!-- 推荐内容动态插入 -->
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.growth-option');
+        const growthContent = document.getElementById('growthContent');
+
+        // 课程推荐数据
+        const courses = [
+            { img: 'picture/portrait-of-growth/img0.jpg', title: '高等数学', desc: '学习微积分、泰勒公式', link: 'course-math.html' },
+            { img: 'picture/portrait-of-growth/img1.jpg', title: '大学物理', desc: '力学、电磁学基础', link: 'course-physics.html' },
+            { img: 'picture/portrait-of-growth/img2.jpg', title: 'Python编程', desc: '学习编程基础', link: 'course-python.html' },
+            { img: 'picture/portrait-of-growth/img3.jpg', title: '人工智能', desc: '机器学习入门', link: 'course-ai.html' }
+        ];
+
+        // 试卷推荐数据
+        const exams = [
+            { img: 'picture/portrait-of-growth/img0.jpg', title: '数学测试', desc: '高等数学综合测试', link: 'exam-math.html' },
+            { img: 'picture/portrait-of-growth/img1.jpg', title: '物理测试', desc: '大学物理基础题目', link: 'exam-physics.html' },
+            { img: 'picture/portrait-of-growth/img2.jpg', title: '编程测试', desc: 'Python 语言测试', link: 'exam-python.html' },
+            { img: 'picture/portrait-of-growth/img3.jpg', title: 'AI 测试', desc: '人工智能基础测试', link: 'exam-ai.html' }
+        ];
+
+        // 切换推荐内容
+        function updateContent(type) {
+            const data = type === 'courses' ? courses : exams;
+            growthContent.innerHTML = data.map(item => `
+                <a href="${item.link}" class="growth-item">
+                    <img src="${item.img}" alt="${item.title}">
+                    <div class="growth-item-content">
+                        <div class="growth-item-title">${item.title}</div>
+                        <div class="growth-item-desc">${item.desc}</div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // 初始加载课程推荐
+        updateContent('courses');
+
+        // 按钮点击事件
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                updateContent(this.dataset.type);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

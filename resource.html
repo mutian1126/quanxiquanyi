@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/resource.css">
+    <title>学习平台资源</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <div id="menu-container">
+            缺少服务器，暂不可用
+        </div>  -->
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html"  data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html" class="active" >资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索相关课程">
+                </div>
+            </div>
+            <h2 class="more-courses-title">更多课程</h2>
+            <div class="category-selection">
+                <button class="scroll-btn left">◄</button>
+                <div class="category-container" id="category-container"></div>
+                <button class="scroll-btn right">►</button>
+            </div>
+
+            <!-- 课程内容 -->
+            <div class="more-courses" id="courses-container">
+                <div class="course-category" id="ai">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="人工智能 1" class="course-image">
+                            <h4>人工智能 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="人工智能 2" class="course-image">
+                            <h4>人工智能 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="人工智能 3" class="course-image">
+                            <h4>人工智能 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="人工智能 4" class="course-image">
+                            <h4>人工智能 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-category" id="data-science">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="数据科学 1" class="course-image">
+                            <h4>数据科学 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="数据科学 2" class="course-image">
+                            <h4>数据科学 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="数据科学 3" class="course-image">
+                            <h4>数据科学 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="数据科学 4" class="course-image">
+                            <h4>数据科学 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-category" id="web-development">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="网页开发 1" class="course-image">
+                            <h4>网页开发 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="网页开发 2" class="course-image">
+                            <h4>网页开发 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="网页开发 3" class="course-image">
+                            <h4>网页开发 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="网页开发 4" class="course-image">
+                            <h4>网页开发 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-category" id="math">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="数学 1" class="course-image">
+                            <h4>数学 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="数学 2" class="course-image">
+                            <h4>数学 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="数学 3" class="course-image">
+                            <h4>数学 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="数学 4" class="course-image">
+                            <h4>数学 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-category" id="physics">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="物理 1" class="course-image">
+                            <h4>物理 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="物理 2" class="course-image">
+                            <h4>物理 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="物理 3" class="course-image">
+                            <h4>物理 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="物理 4" class="course-image">
+                            <h4>物理 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-category" id="chemistry">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="化学 1" class="course-image">
+                            <h4>化学 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="化学 2" class="course-image">
+                            <h4>化学 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="化学 3" class="course-image">
+                            <h4>化学 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="化学 4" class="course-image">
+                            <h4>化学 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="course-category" id="history">
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img0.jpg" alt="历史 1" class="course-image">
+                            <h4>历史 1</h4>
+                            <p>课程描述 1</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img1.jpg" alt="历史 2" class="course-image">
+                            <h4>历史 2</h4>
+                            <p>课程描述 2</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img2.jpg" alt="历史 3" class="course-image">
+                            <h4>历史 3</h4>
+                            <p>课程描述 3</p>
+                        </a>
+                    </div>
+                    <div class="course-example">
+                        <a href="目标页面链接.html" class="course-example">
+                            <img src="picture/resource/img3.jpg" alt="历史 4" class="course-image">
+                            <h4>历史 4</h4>
+                            <p>课程描述 4</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- "所有课程" 容器 -->
+                <div id="all-courses"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const categoryContainer = document.getElementById("category-container");
+            const courseSections = document.querySelectorAll(".course-category");
+            const allCoursesContainer = document.getElementById("all-courses");
+            const leftBtn = document.querySelector(".scroll-btn.left");
+            const rightBtn = document.querySelector(".scroll-btn.right");
+
+            // 获取所有课程类别
+            const categories = Array.from(courseSections).map(section => ({
+                id: section.id,
+                name: section.querySelector(".course-example h4").textContent.split(" ")[0]
+            }));
+
+            let currentIndex = 0;
+            const maxVisibleCategories = 3;
+
+            function updateCategoryButtons() {
+                categoryContainer.innerHTML = "";
+                let visibleCategories = categories.slice(currentIndex, currentIndex + maxVisibleCategories);
+
+                // 添加 "所有课程" 按钮
+                const allButton = document.createElement("button");
+                allButton.classList.add("category-button", "active");
+                allButton.textContent = "所有课程";
+                allButton.dataset.target = "all";
+                categoryContainer.appendChild(allButton);
+
+                // 添加可见分类
+                visibleCategories.forEach(category => {
+                    const button = document.createElement("button");
+                    button.classList.add("category-button");
+                    button.textContent = category.name;
+                    button.dataset.target = category.id;
+                    categoryContainer.appendChild(button);
+                });
+
+                // 更新按钮状态
+                leftBtn.style.visibility = currentIndex > 0 ? "visible" : "hidden";
+                rightBtn.style.visibility = (currentIndex + maxVisibleCategories) < categories.length ? "visible" : "hidden";
+            }
+
+            function showCategory(targetId) {
+                courseSections.forEach(section => section.classList.remove("active"));
+                allCoursesContainer.innerHTML = ""; // 清空"所有课程"容器
+
+                if (targetId === "all") {
+                    // 把所有课程复制到"所有课程"容器
+                    courseSections.forEach(section => {
+                        Array.from(section.children).forEach(course => {
+                            allCoursesContainer.appendChild(course.cloneNode(true));
+                        });
+                    });
+                    allCoursesContainer.style.display = "flex";
+                } else {
+                    allCoursesContainer.style.display = "none";
+                    document.getElementById(targetId).classList.add("active");
+                }
+            }
+
+            // 绑定点击事件
+            categoryContainer.addEventListener("click", function (event) {
+                if (event.target.classList.contains("category-button")) {
+                    document.querySelectorAll(".category-button").forEach(btn => btn.classList.remove("active"));
+                    event.target.classList.add("active");
+
+                    const targetId = event.target.dataset.target;
+                    showCategory(targetId);
+                }
+            });
+
+            // 左右翻页功能
+            leftBtn.addEventListener("click", function () {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCategoryButtons();
+                }
+            });
+
+            rightBtn.addEventListener("click", function () {
+                if (currentIndex + maxVisibleCategories < categories.length) {
+                    currentIndex++;
+                    updateCategoryButtons();
+                }
+            });
+
+            // 初始渲染分类按钮 & 显示所有课程
+            updateCategoryButtons();
+            showCategory("all");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/course-ai-assistant.css">
+    <title>学习平台课程-数字人助手</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html" >首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html" class="active" data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="ai-function-container">
+                <div class="ai-function-box">
+                    <h2 class="centered-text">有任何问题？试试看看我提问吧</h2>
+                    <p class="left-text">你可以尝试问我：</p>
+                    <div class="ai-options">
+                        <button class="ai-option">个性化课程推荐</button>
+                        <button class="ai-option">随堂练习</button>
+                        <button class="ai-option">知识点总结</button>
+                        <button class="ai-option">智能阅卷</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="picture/course-ai-assistant/ai-assistant.jpg" alt="描述图片" width="255" height="381">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="请输入内容..." class="input-field">
+                        <button class="send-button">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow');
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+</body>
+</html>

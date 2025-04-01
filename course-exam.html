@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/course-exam.css">
+    <title>学习平台课程-试卷</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <div id="menu-container">
+            缺少服务器，暂不可用
+        </div>  -->
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html" >首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html"  data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" class="active" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="resource-bar">
+            <div class="resource-header">
+                <a href="course.html" class="back-link">
+                    <span class="arrow">←</span> 返回
+                </a>
+                <span>测试/试卷</span>
+                <div class="subject-title">科目</div>
+            </div>
+            <ul class="subject-list">
+                <li>
+                    <span class="subject">高等数学</span>
+                    <ul class="hidden-menu">
+                        <li>
+                            <span class="submenu-item">>课堂测试</span>
+                            <ul class="sub-hidden-menu">
+                                <li><div class="resource-item" data-image="picture/course-exam/image1.jpg">资源1</div></li>
+                                <li><div class="resource-item" data-image="image2.jpg">资源2</div></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="submenu-item">>更多试卷</span>
+                            <ul class="sub-hidden-menu">
+                                <li><div class="resource-item">资源3</div></li>
+                                <li><div class="resource-item">资源4</div></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subject">大学物理</span>
+                    <ul class="hidden-menu">
+                        <li><span class="submenu-item">>课堂测试</span></li>
+                        <li><span class="submenu-item">>更多试卷</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subject">电路分析基础</span>
+                    <ul class="hidden-menu">
+                        <li><span class="submenu-item">>课堂测试</span></li>
+                        <li><span class="submenu-item">>更多试卷</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subject">MATLAB</span>
+                    <ul class="hidden-menu">
+                        <li><span class="submenu-item">>课堂测试</span></li>
+                        <li><span class="submenu-item">>更多试卷</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subject">离散数学</span>
+                    <ul class="hidden-menu">
+                        <li><span class="submenu-item">>课堂测试</span></li>
+                        <li><span class="submenu-item">>更多试卷</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="subject">程序设计与编程方法</span>
+                    <ul class="hidden-menu">
+                        <li><span class="submenu-item">>课堂测试</span></li>
+                        <li><span class="submenu-item">>更多试卷</span></li>
+                    </ul>
+                </li>
+                <!-- 可以添加更多科目 -->
+            </ul>
+        </div>
+
+    </div>
+    <div class="resource-display">
+        <img id="resource-image" src="" alt="资源图片" style="display: none; max-width: 100%;">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取所有科目
+            const subjects = document.querySelectorAll('.subject');
+        
+            subjects.forEach(subject => {
+                subject.addEventListener('click', function(event) {
+                    event.preventDefault(); // 阻止默认行为
+
+                    // 检查当前科目是否已经有 active 类
+                    if (this.classList.contains('active')) {
+                        this.classList.remove('active'); // 移除 active 类
+                    } else {
+                        // 移除所有科目的 active 类
+                        subjects.forEach(s => s.classList.remove('active'));
+
+                        // 为当前点击的科目添加 active 类
+                        this.classList.add('active');
+                    }
+
+                    const hiddenMenu = this.nextElementSibling; // 获取隐藏菜单
+                    if (hiddenMenu && hiddenMenu.classList.contains('hidden-menu')) {
+                        // 仅当当前科目具有 active 类时才展开隐藏菜单
+                        hiddenMenu.style.display = this.classList.contains('active') ? 'block' : 'none';
+                    }
+                });
+            });
+
+            // 获取所有子菜单项
+            const submenuItems = document.querySelectorAll('.submenu-item');
+            submenuItems.forEach(item => {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault(); // 阻止默认行为
+
+                    // 切换箭头符号
+                    if (this.textContent.startsWith('>')) {
+                        this.textContent = this.textContent.replace('>', 'v');
+                    } else {
+                        this.textContent = this.textContent.replace('v', '>');
+                    }
+
+                    // 切换字体颜色
+                    this.classList.toggle('active');
+
+                    // 展开或隐藏二级菜单
+                    const subHiddenMenu = this.nextElementSibling;
+                    if (subHiddenMenu && subHiddenMenu.classList.contains('sub-hidden-menu')) {
+                        subHiddenMenu.style.display = subHiddenMenu.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
+        }); 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取所有资源项
+            const resourceItems = document.querySelectorAll('.resource-item');
+            const resourceImage = document.getElementById('resource-image');
+
+            resourceItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imageSrc = this.getAttribute('data-image');
+                    if (imageSrc) {
+                        resourceImage.src = imageSrc;
+                        resourceImage.style.display = 'block'; // 显示图片
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

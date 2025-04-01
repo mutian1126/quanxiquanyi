@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/course-knowledge-system.css">
+    <title>学习平台课程-知识体系</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <div id="menu-container">
+            缺少服务器，暂不可用
+        </div>  -->
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html" >首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html"  data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system" class="active">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索...">
+                </div>
+            </div>
+            <div class="course-section">
+                <div class="course-header">我的课程</div>
+                <div class="course-subtitle">利用知识体系更高效地学习课程</div>
+                <div class="course-container">
+                    <button class="prev-course"><</button>
+                    <div class="course-content">
+                        <div class="course-card">
+                            <img src="picture/course-knowledge-system/course1.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">高等数学</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="picture/course-knowledge-system/course2.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">电路基础分析</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="picture/course-knowledge-system/course3.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">大学物理</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="picture/course-knowledge-system/course4.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">MATLAB</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="path/to/course-image.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">离散数学</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="path/to/course-image.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">概率论</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="path/to/course-image.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">课程7</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                        <div class="course-card">
+                            <img src="path/to/course-image.jpg" alt="课程图片" class="course-image">
+                            <p class="course-card-text">课程8</p>
+                            <button class="course-button">跳转</button>
+                        </div>
+                    </div>
+                    <button class="next-course">></button>
+                </div>
+            </div>
+            <div class="mindmap-section">
+                <div class="mindmap-header-container">
+                    <div class="mindmap-header">我的思维导图</div>
+                    <button class="create-mindmap-button">+创作你的思维导图</button>
+                </div>
+                <div class="mindmap-subtitle">在这里制作并保存你的思维导图</div>
+                <div class="mindmap-container">
+                    <button class="prev-mindmap"><</button>
+                    <div class="mindmap-content">
+                        <div class="mindmap-image-container" onclick="openModal('picture/course-knowledge-system/高数思维导图.jpg')">
+                            <img src="picture/course-knowledge-system/高数思维导图.jpg" alt="思维导图图片" class="mindmap-image">
+                            <div class="mindmap-info">高数思维导图。</div>
+                        </div>
+                        <div class="mindmap-image-container" onclick="openModal('picture/course-knowledge-system/mindmap-image1.jpg')">
+                            <img src="picture/course-knowledge-system/mindmap-image1.jpg" alt="思维导图图片" class="mindmap-image">
+                            <div class="mindmap-info">这是思维导图的描述信息，您可以在这里添加更多细节。</div>
+                        </div>
+                        <div class="mindmap-image-container" onclick="openModal('picture/course-knowledge-system/mindmap-image2.jpg')">
+                            <img src="picture/course-knowledge-system/mindmap-image2.jpg" alt="思维导图图片" class="mindmap-image">
+                            <div class="mindmap-info">这是思维导图的描述信息，您可以在这里添加更多细节。</div>
+                        </div>
+                    </div>
+                    <button class="next-mindmap">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var courseContent = document.querySelector(".course-content");
+            var prevBtn = document.querySelector(".prev-course");
+            var nextBtn = document.querySelector(".next-course");
+            var cardWidth = 220; // 每个课程卡片宽度 + 间距
+            var currentIndex = 0;
+
+            prevBtn.addEventListener("click", function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    courseContent.style.transform = "translateX(" + (-currentIndex * cardWidth) + "px)";
+                }
+            });
+
+            nextBtn.addEventListener("click", function() {
+                var maxIndex = Math.ceil(courseContent.children.length - 3); // 只显示 3 个，计算最大索引
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    courseContent.style.transform = "translateX(" + (-currentIndex * cardWidth) + "px)";
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mindmapContent = document.querySelector('.mindmap-content');
+            var prevButton = document.querySelector('.prev-mindmap');
+            var nextButton = document.querySelector('.next-mindmap');
+            var pageWidth = 300; // 根据图片的最大宽度设置
+            var currentPage = 0;
+            var totalPages = Math.ceil(mindmapContent.children.length); // 根据思维导图项数量计算总页数
+
+            prevButton.addEventListener('click', function() {
+                if (currentPage > 0) {
+                    currentPage--;
+                    mindmapContent.style.transform = 'translateX(' + (-currentPage * pageWidth) + 'px)';
+                }
+            });
+
+            nextButton.addEventListener('click', function() {
+                if (currentPage < totalPages - 1) { // 根据总页数判断
+                    currentPage++;
+                    mindmapContent.style.transform = 'translateX(' + (-currentPage * pageWidth) + 'px)';
+                }
+            });
+        });
+    </script>
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.getElementById("modal");
+            var modalImage = document.getElementById("modal-image");
+            var caption = document.getElementById("caption");
+
+            modal.style.display = "block";
+            modalImage.src = imageSrc;
+            caption.innerHTML = imageSrc.split("/").pop();
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/community.css  ">
+    <title>学习平台社区</title>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <div id="menu-container">
+            缺少服务器，暂不可用
+        </div>  -->
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="picture/sidebar/avatar.jpg" alt="用户头像">
+                </div>
+                <div class="user-details">
+                    <div class="user-name">用户名</div>
+                    <div class="user-role">学生</div>
+                </div>
+            </div>
+            <div class="function-section">
+                <h2>功能</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li>
+                        <a href="course.html"  class="course" data-page="course">课程 <span class="arrow">►</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="course-ai-assistant.html"  data-page="course-ai-assistant">数字人助手</a></li>
+                            <li><a href="course-exam.html" data-page="exam">试卷</a></li>
+                            <li><a href="course-homework.html" data-page="homework">作业</a></li>
+                            <li><a href="course-knowledge-system.html" data-page="knowledge-system">知识体系</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">资源</a></li>
+                    <li><a href="community.html"  class="active">社区</a></li>
+                    <li><a href="learning-analytics.html">学习分析</a></li>
+                    <li><a href="portrait-of-growth.html">成长画像</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-section">
+                <h2>好友</h2>
+                <ul class="sidebar-menu">
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend1.jpg" alt="好友1头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友1</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend2.jpg" alt="好友2头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友2</div>
+                                <div class="friend-status-offline">离线</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friend-info">
+                            <div class="friend-avatar">
+                                <img src="picture/sidebar/friend3.jpg" alt="好友3头像">
+                            </div>
+                            <div class="friend-details">
+                                <div class="friend-name">好友3</div>
+                                <div class="friend-status-online">在线</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="general-section">
+                <h2>通用</h2>
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="set-up">设置</a></li>
+                    <li><a href="#" class="exit">退出</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1 class="community-title">社区</h1>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="搜索讨论">
+                    <div class="separator"></div>
+                    <button class="add-question">+添加提问</button>
+                </div>
+                <div class="tag-container" id="tagContainer">
+                    <span class="tag">标签1</span>
+                    <span class="tag">标签2</span>
+                    <span class="tag">标签3</span>
+                    <span class="tag">标签4</span>
+                    <span class="tag">标签5</span>
+                    <span class="tag">标签6</span>
+                    <span class="tag more-tags" id="moreTags">更多 ▼</span>
+                    <div class="more-tags-container" id="moreTagsContainer" ></div>
+                </div>
+            </div>
+            
+            <div class="posts-container">
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person1.jpg" alt="用户1">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子1标题</h3>
+                        <p>这是第一个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月1日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person2.jpg" alt="用户2">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子2标题</h3>
+                        <p>这是第二个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月2日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person3.jpg" alt="用户3">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子3标题</h3>
+                        <p>这是第三个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月3日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person1.jpg" alt="用户1">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子4标题</h3>
+                        <p>这是第四个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月4日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person2.jpg" alt="用户2">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子5标题</h3>
+                        <p>这是第五个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月5日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person3.jpg" alt="用户3">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子6标题</h3>
+                        <p>这是第六个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月6日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person1.jpg" alt="用户1">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子7标题</h3>
+                        <p>这是第七个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月7日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person2.jpg" alt="用户2">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子8标题</h3>
+                        <p>这是第八个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月8日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person3.jpg" alt="用户3">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子9标题</h3>
+                        <p>这是第九个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月9日</span>
+                </a>
+                <a href="目标页面链接.html" class="post">
+                    <div class="post-image">
+                        <img src="picture/community/person1.jpg" alt="用户1">
+                    </div>
+                    <div class="post-content">
+                        <h3>帖子10标题</h3>
+                        <p>这是第十个帖子的介绍内容。</p>
+                    </div>
+                    <span class="post-time">2025年3月10日</span>
+                </a>
+                <!-- 可以继续添加更多帖子 -->
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleCourses = document.querySelector('a[data-page="course"]');
+            const subMenu = document.querySelector('.sub-menu');
+    
+            // 获取当前页面的 URL
+            const currentPage = window.location.pathname.split('/').pop();
+    
+            // 自动展开菜单的页面
+            const autoExpandPages = [
+                'course-ai-assistant.html',
+                'course-exam.html',
+                'course-homework.html',
+                'course-knowledge-system.html',
+                'course.html'
+            ];
+    
+            // 检查当前页面是否在自动展开列表中
+            if (autoExpandPages.includes(currentPage)) {
+                subMenu.style.display = 'block'; // 展开子菜单
+                const courseLink = document.querySelector('a.course');
+                if (courseLink) {
+                    courseLink.classList.add('active'); // 为类名为 course 的元素添加 active 类
+                }
+                const arrow = courseLink.querySelector('.arrow')    ;
+                if (arrow) {
+                    arrow.textContent = '▼'; // 更新箭头方向
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const moreTags = document.getElementById('moreTags');
+            const moreTagsContainer = document.getElementById('moreTagsContainer');
+            const tags = document.querySelectorAll('#tagContainer .tag:not(.more-tags)');
+            
+            // 检查标签数量并处理
+            if (tags.length > 5) {
+                for (let i = 5; i < tags.length; i++) {
+                    moreTagsContainer.appendChild(tags[i]); // 将多余的标签移动到更多标签容器中
+                }
+            }
+
+            moreTags.addEventListener('click', function() {
+                if (moreTagsContainer.style.display === 'none') {
+                    moreTagsContainer.style.display = 'block'; // 展开更多标签
+                    moreTags.textContent = '收起 ▲'; // 更新文本为"收起"
+                } else {
+                    moreTagsContainer.style.display = 'none'; // 收起更多标签
+                    moreTags.textContent = '更多 ▼'; // 更新文本为"更多"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
